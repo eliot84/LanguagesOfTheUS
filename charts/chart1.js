@@ -1,15 +1,20 @@
+    console.log('yo yo yo');
+
+
+
+
+
+
 var chart = c3.generate({
 	 bindto: '#chartA',
     data: {
+        order: 'desc', 
         x: 'x',
        xFormat: '%Y', // 'xFormat' can be used as custom format of 'x'
-        columns: [
-            ['x', '1980', '1990', '2000', '2013', '2010'],
-//            ['x', '2013010', '20130102', '20130103', '20130104', '20130105', '20130106'],
-        //    ['data1', 30, 200, 100, 400, 150],
-         //   ['data2', 130, 340, 200, 500, 250],
-//Spoke a language other than English at home 	23060040	        31844979	     46951595	     59542596
-['Spanish or Spanish Creole',                   	 11116194,	         17345064,	      28101052,	      36995602],
+       columns: [
+            ['x', '1980', '1990', '2000', '2010'],
+                //Spoke a language other than English at home 	23060040	        31844979	     46951595	     59542596
+            //['Spanish or Spanish Creole',                   	 11116194,	         17345064,	      28101052,	      36995602],
 ['Chinese',	                                           630806,	          1319462,	       2022143,	       2808692],
 ['French',                                      	  1550751,	          1930404,	       2097206,        2069352],
 ['Tagalog',	                                           474150,	           843251,	       1224241,	       1573720],
@@ -27,6 +32,10 @@ var chart = c3.generate({
 ['Armenian',	                                       100634,	           149694,	        202708,      	240402],
 ['Yiddish',	                                           315953,	           213064,	        178945,	        154763]
         ]
+
+    },
+      tooltip: {
+        grouped: false // Default true
     },
     axis: {
         x: {
@@ -45,6 +54,57 @@ setTimeout(function () {
         ]
     });
 }, 1000);
+
+
+
+
+
+
+var eightys = 
+[
+['Chinese', 630806],
+['French', 1550751],
+['Tagalog', 474150],
+['Vietnamese', 197588],
+['Korean', 266280],
+['German', 1586593],
+['Russian', 173226],
+['Italian', 1618344],
+['Portuguese', 351875],
+['Polish', 820647],
+['Japanese', 336318],
+['Persian', 106992],
+['Greek', 401443],
+['Serbo-Croatian', 150255],
+['Armenian', 100634],
+['Yiddish', 315953]
+]        
+
+
+
+
+
+
+
+eightys.sort(function (a,b){
+a = a[1];
+b = b[1];
+return a == b ? 0 : (a > b ? -1 : 1)
+
+});
+
+console.log(eightys[0]);
+
+
+
+   $('.showIt').html(eightys[4]); 
+
+
+//document.write(eightys[1] + "<br />");
+
+
+
+
 
 
 
