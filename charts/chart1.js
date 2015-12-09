@@ -34,6 +34,9 @@ var chart = c3.generate({
         ]
 
     },
+     legend: {
+        position: 'right'
+    },
       tooltip: {
         grouped: false // Default true
     },

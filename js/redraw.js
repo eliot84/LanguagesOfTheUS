@@ -1,6 +1,6 @@
 $(window).resize(function(){
    
-   drawOutbreaks();
-   drawFarms();
+   drawStateOtherLanguages();
+   
 
 });

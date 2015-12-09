@@ -1,21 +1,21 @@
 
 
 google.load('visualization', '1', {'packages': ['geochart']});
-google.setOnLoadCallback(drawOutbreaks);
+google.setOnLoadCallback(drawStateOtherLanguages);
 
-function drawOutbreaks() {
+function drawStateOtherLanguages() {
   var data = google.visualization.arrayToDataTable([
 ['State', 'Farms'],
     ['Alabama', 3],
     ['Alaska', 1],
     ['Arizona', 20],
     ['Arkansas', 2],
-    ['California', 100],
+    ['California', 180],
     ['Colorado', 10],
     ['Conneticut', 9],
     ['Delaware', 1],
     ['Florida', 60],
-    ['Georgia', 15],
+    ['Geogria', 15],
     ['Hawaii', 4],
     ['Idaho', 2],
     ['Illinois', 33],
@@ -36,7 +36,7 @@ function drawOutbreaks() {
     ['Nevada', 9],
     ['New Hampshire', 1],
     ['New Jersey', 30],
-    ['New Mexico',],
+    ['New Mexico', 2], ///
     ['New York', 67],
     ['North Carolina', 12],
     ['North Dakota', 0],
@@ -50,12 +50,12 @@ function drawOutbreaks() {
     ['Tennessee', 5],
     ['Texas', 100],
     ['Utah', 4],
-    ['Vermont', 1],//
+    ['Vermont', 1],
     ['Virginia', 14],
     ['Washington', 14],
     ['West Virginia', 1],
     ['Wisconsin', 6],
-    ['Wyoming', 1]//
+    ['Wyoming', 1]
   ]);
   
   var opts = {
@@ -75,6 +75,7 @@ function drawOutbreaks() {
 
   };
   var geochart = new google.visualization.GeoChart(
-      document.getElementById('stateOutbreaks'));
+      document.getElementById('stateOtherLanguage'));
   geochart.draw(data, opts);
 };
+
