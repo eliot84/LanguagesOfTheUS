@@ -1,6 +1,204 @@
 
 
 
+
+
+
+
+
+
+
+//CHOROPLETH Most languages spoken by state
+/*
+Alabama', 235741
+Alaska', 108077
+Arizona', 1616190
+Arkansas', 197038
+California', 15348831
+Colorado', 802652
+Connecticut', 727241
+Delaware', 107271
+District of Columbia', 91935
+Florida', 4944791
+Georgia', 1211924
+Hawaii', 326893
+Idaho', 153033
+Illinois', 2684946
+Indiana', 498949
+Iowa', 207588
+Kansas', 293918
+Kentucky', 202638
+Louisiana', 368300
+Maine', 85487
+Maryland', 914305
+Massachusetts', 1367082
+Michigan', 843256
+Minnesota', 535373
+Mississippi', 108190
+Missouri', 344835
+Montana', 41307
+Nebraska', 180422
+Nevada', 747387
+New Hampshire', 100078
+New Jersey', 2489641
+New Mexico', 695931
+New York', 5487050
+North Carolina', 985646
+North Dakota', 34238
+Ohio', 719095
+Oklahoma', 331507
+Oregon', 538368
+Pennsylvania', 1239179
+Rhode Island', 210374
+South Carolina', 299919
+South Dakota', 52079
+Tennessee', 397545
+Texas', 8233251
+Utah', 366502
+Vermont', 31035
+Virginia', 1130877
+Washington', 1182849
+West Virginia', 42260
+Wisconsin', 462381
+Wyoming', 36169
+*/
+/*
+
+var lSpoken = 
+[
+['Alabama', 235741],
+['Alaska', 108077],
+['Arizona', 1616190],
+['Arkansas', 197038],
+['California', 15348831],
+['Colorado', 802652],
+['Connecticut', 727241],
+['Delaware', 107271],
+['District of Columbia', 91935],
+['Florida', 4944791],
+['Georgia', 1211924],
+['Hawaii', 326893],
+['Idaho', 153033],
+['Illinois', 2684946],
+['Indiana', 498949],
+['Iowa', 207588],
+['Kansas', 293918],
+['Kentucky', 202638],
+['Louisiana', 368300],
+['Maine', 85487],
+['Maryland', 914305],
+['Massachusetts', 1367082],
+['Michigan', 843256],
+['Minnesota', 535373],
+['Mississippi', 108190],
+['Missouri', 344835],
+['Montana', 41307],
+['Nebraska', 180422],
+['Nevada', 747387],
+['New Hampshire', 100078],
+['New Jersey', 2489641],
+['New Mexico', 695931],
+['New York', 5487050],
+['North Carolina', 985646],
+['North Dakota', 34238],
+['Ohio', 719095],
+['Oklahoma', 331507],
+['Oregon', 538368],
+['Pennsylvania', 1239179],
+['Rhode Island', 210374],
+['South Carolina', 299919],
+['South Dakota', 52079],
+['Tennessee', 397545],
+['Texas', 8233251],
+['Utah', 366502],
+['Vermont', 31035],
+['Virginia', 1130877],
+['Washington', 1182849],
+['West Virginia', 42260],
+['Wisconsin', 462381],
+['Wyoming', 36169]
+]
+
+lSpoken.sort(function (a,b){
+a = a[1];
+b = b[1];
+return a == b ? 0 : (a > b ? -1 : 1)
+
+});
+
+//console.log(lSpoken)
+
+function jump(){
+
+for(i=0; i < lSpoken.length; i++)
+{
+	var perc = Math.round((lSpoken[i][1]/8233251) * 100);
+
+	lSpoken[i][2] = perc;
+
+
+	console.log(lSpoken[i][0] + ':::' + lSpoken[i][1] + ':::' + lSpoken[i][2]);
+}
+
+}
+
+jump();
+
+
+*/
+
+/*
+15348831
+
+36169 / 15348831
+
+* 100
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 HISTORIAL VS PRESENT COMPARISONS
@@ -11,56 +209,56 @@ HISTORIAL VS PRESENT COMPARISONS
         - How do ethnicities compare on ability to speak multiple languages
 
 
-Native Born Citizen 5 years or older only spoke English at Home percentage: 
+Native Born Citizen 5 years or older only spoke English at Home percentage', 
 
-Total: 279,012,712
+Total', 279,012,712
 
-http://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk
+http'://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?src=bkmk
 
 People a
-2014: 97.2
-2013: 97.2
-2012: 97.3
-2011: 97.3
-2010: 97.4
-2009: 97.4
-2008: 97.4
-2007: 97.4
-2006: 97.4
+2014', 97.2
+2013', 97.2
+2012', 97.3
+2011', 97.3
+2010', 97.4
+2009', 97.4
+2008', 97.4
+2007', 97.4
+2006', 97.4
 
 
 
 
 
-Naturalized Citizen:
+Naturalized Citizen',
 
 
 
 
-1890 Censes: People 10 years old and over who did not speak english were 
+1890 Censes', People 10 years old and over who did not speak english were 
              asked what language they spoke.
 
-1900 Censes: People 10 years old and over who did not speak english were 
+1900 Censes', People 10 years old and over who did not speak english were 
              asked what language they spoke.
 
-1910 Census: Foreign Born people were asked abou their "mother-tongue" -
+1910 Census', Foreign Born people were asked abou their "mother-tongue" -
 			 language. Spoken in the household while growing up.
 
-1920 Census: Foreign Born people were asked abou their "mother-tongue" -
+1920 Census', Foreign Born people were asked abou their "mother-tongue" -
 			 language. Spoken in the household while growing up.
 
-1930 Census: Foreign Born people were asked abou their "mother-tongue" -
+1930 Census', Foreign Born people were asked abou their "mother-tongue" -
 			 language. Spoken in the household while growing up.
 
-1960 Census: Foreign Born people were asked abou their "mother-tongue" -
+1960 Census', Foreign Born people were asked abou their "mother-tongue" -
 			 language. Spoken in the household while growing up.
 
-1980 - 2009 Census: 
+1980 - 2009 Census', 
 			 1. Does this person speak a language other than English at home?
 			 2. What is the language
 			 3. How well does this person speak English?
 
-2010 - Present Annual American Community Survey:
+2010 - Present Annual American Community Survey',
 			 1. Does this person speak a language other than English at home?
 			 2. What is the language
 			 3. How well does this person speak English?
@@ -84,8 +282,8 @@ Naturalized Citizen:
 /*
 Top Languages Other than English Spoken in 1980 and Changes in Relative Rank, 1990-2010
 
-http://www.census.gov/dataviz/visualizations/045/508.php
-(example) http://www.census.gov/dataviz/visualizations/045/ (Example)
+http'://www.census.gov/dataviz/visualizations/045/508.php
+(example) http'://www.census.gov/dataviz/visualizations/045/ (Example)
 	                                           	1980               	1990	         2000	         2010
 Spoke a language other than English at home (1)	23,060,040	        31,844,979	     46,951,595	     59,542,596
 Spanish or Spanish Creole                   (2)	11,116,194	        17,345,064	     28,101,052	     36,995,602

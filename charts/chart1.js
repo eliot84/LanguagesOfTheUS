@@ -84,7 +84,7 @@ var eightys =
 
 
 
-
+/*
 
 eightys.sort(function (a,b){
 a = a[1];
@@ -103,7 +103,7 @@ console.log(eightys[0]);
 //document.write(eightys[1] + "<br />");
 
 
-
+*/
 
 
 
