@@ -15,6 +15,15 @@ Total Surveyed 262375152
 */
 
 
+/*
+More specifically, out of the 262,375,152 participants to the 2010 census there following percentages show
+the ratios between english only and multilingual speakers by race. 
+
+
+
+
+*/
+
 
 
 var englishOnlyByRace2 = c3.generate({
@@ -23,9 +32,13 @@ var englishOnlyByRace2 = c3.generate({
     data: {
       x: 'x',
         columns: [
-            ['x', 'Anglo American', 'Native Hawaiian or other Pacific Islander', 'Hispanic or Latino', 'Black or African American', 'Asian', 'American Indian or Alaska Native'],
-            ['English Only', 30, 200, 200, 400, 150, 250],
-            ['2nd Language', 130, 100, 100, 200, 150, 50]
+           /* ['x', 'Black or African American', 'Anglo American', 'Native Hawaiian or other Pacific Islander', 'Hispanic or Latino', 'Black or African American', 'Asian', 'American Indian or Alaska Native'],
+            ['English Only', 88, 56, 21, 93, 21, 71],
+            ['Multilingual', 12, 44, 79, 7, 79, 29]*/
+
+           ['x', 'Anglo American', 'Black or African American', 'American Indian or Alaska Native', 'Native Hawaiian or other Pacific Islander', 'Asian', 'Hispanic or Latino'],
+            ['English Only', 93, 88, 71, 56, 21, 19],
+            ['Multilingual', 7, 12, 29, 44, 79, 81]
         ],
         type: 'bar',
         groups: [
@@ -34,11 +47,20 @@ var englishOnlyByRace2 = c3.generate({
     },
     grid: {
         y: {
+                      show: true,
+
             lines: [{value:0}]
         }
     },
     axis: {
            rotated: true,
+               y: {
+                tick:{
+                     format: function(d){
+                                return d + '%';
+                               }
+                 }
+             },
              x: {
                         type: 'category'
                     }

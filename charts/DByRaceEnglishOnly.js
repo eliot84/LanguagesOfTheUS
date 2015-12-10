@@ -17,6 +17,53 @@ Total Surveyed 262375152
 
 
 var englishOnlyByRace = c3.generate({
+        bindto: '#englishOnlyByRace',
+
+    data: {
+      x: 'x',
+        columns: [
+           /* ['x', 'Black or African American', 'Anglo American', 'Native Hawaiian or other Pacific Islander', 'Hispanic or Latino', 'Black or African American', 'Asian', 'American Indian or Alaska Native'],
+            ['English Only', 88, 56, 21, 93, 21, 71],
+            ['Multilingual', 12, 44, 79, 7, 79, 29]*/
+
+           ['x', 'Anglo American', 'Black or African American', 'American Indian or Alaska Native', 'Native Hawaiian or other Pacific Islander', 'Asian', 'Hispanic or Latino'],
+              ['x', 'Anglo American', 'Native Hawaiian or other Pacific Islander', 'Hispanic or Latino', 'Black or African American', 'Asian', 'American Indian or Alaska Native'],
+                      ['English Only Speaker', 67, 13, 12, 11, 7, 6]
+        ],
+        type: 'bar',
+        groups: [
+            ['English Only', '2nd Language']
+        ]
+    },
+    grid: {
+        y: {
+            show: true,
+
+            lines: [{value:0}]
+        }
+    },
+    axis: {
+           rotated: true,
+             y: {
+                tick:{
+                     format: function(d){
+                                return d + '%';
+                               }
+                 }
+             },
+
+
+             x: {
+                        type: 'category'
+                    }
+    },
+
+});
+
+
+
+/*
+var englishOnlyByRace = c3.generate({
 	    bindto: '#englishOnlyByRace',
 
                 size: {
@@ -82,7 +129,7 @@ var englishOnlyByRace = c3.generate({
                 legend: {
                     show: false
                 }
-            });
+            }); */
 
 //English Only Speaking US Citizens by Race
 // http://www.census.gov/data/tables/2000/dec/phc-t-42.html

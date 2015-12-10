@@ -48,7 +48,7 @@ var spanishGrowth = c3.generate({
         type: 'bar'
     },
      legend: {
-        position: 'right'
+       // position: 'right'
     },
 
     color: {
