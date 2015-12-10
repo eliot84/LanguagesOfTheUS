@@ -52,7 +52,7 @@ var spanishGrowth = c3.generate({
     },
 
     color: {
-        pattern: ['#ccff99', '#99ccff', '#ffcccc']
+        pattern: ['#ff6600', '#006699', '#ffcccc']
     },
 
     bar: {

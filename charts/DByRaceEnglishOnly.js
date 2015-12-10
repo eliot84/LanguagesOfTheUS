@@ -35,6 +35,13 @@ var englishOnlyByRace = c3.generate({
             ['English Only', '2nd Language']
         ]
     },
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        }
+        // or
+        //width: 100 // this makes bar width 100px
+    },
     grid: {
         y: {
             show: true,
