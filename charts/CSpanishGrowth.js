@@ -71,13 +71,12 @@ var spanishGrowth = c3.generate({
     axis: {
 
     	y: {
-    		label: 'Y Axis Label',
-
-    		tick:{
-    		format: function(d){
-    		                	return d + '';
-    		                   }
-    	         }
+    		label: { 
+    			text: 'Millions',
+    			position: 'outer-middle',
+    			   }
+    		
+    	         
     	},
 
        x: {

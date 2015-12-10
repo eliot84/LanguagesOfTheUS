@@ -5,7 +5,7 @@ google.setOnLoadCallback(drawStateOtherLanguages);
 
 function drawStateOtherLanguages() {
   var data = google.visualization.arrayToDataTable([
-['State', 'Farms'],
+['State', '%'],
     ['Alabama', 3],
     ['Alaska', 1],
     ['Arizona', 20],
